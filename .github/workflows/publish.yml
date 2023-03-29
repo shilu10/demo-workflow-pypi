@@ -5,7 +5,7 @@ on:
 jobs:
   pypi:
     runs-on: ubuntu-latest
-    ssteps:
+    steps:
     - uses: actions/checkout@v2.3.3
     - name: Set up Python
       uses: actions/setup-python@v2
