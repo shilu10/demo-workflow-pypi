@@ -1,10 +1,14 @@
-name: Publish to PyPI.org
+name: Publish to PyPI
+
 on:
   release:
-    types: [published]
+    types:
+      - published
+
 jobs:
-  pypi:
+  publish_release:
     runs-on: ubuntu-latest
+
     steps:
     - uses: actions/checkout@v2.3.3
     - name: Set up Python
@@ -19,4 +23,3 @@ jobs:
       run: python setup.py sdist bdist_wheel
     - name: Upload packages
       run: twine upload -u __token__ -p ${{ secrets.pypi_secret }} dist/*
-
