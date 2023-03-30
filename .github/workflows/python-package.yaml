@@ -2,7 +2,7 @@ name: Python package
 
 ## Will run when commits pushed to main, ro when PR opened for merging commits into main
 on:
-  push:
+  pull_request:
     branches:
       - main
 
