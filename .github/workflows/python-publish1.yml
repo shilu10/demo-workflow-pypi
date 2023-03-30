@@ -46,8 +46,8 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.TOKEN_GITHUB }}
         run: |
-          git config user.name shilu10
-          git config user.email shilu842003@gmail.com
+          git config user.name github-actions
+          git config user.email github-actions@github.com
           poetry run semantic-release publish
         ## Because inside the poetry venv?
       - name: Publish to TestPyPI
