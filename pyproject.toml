@@ -1,14 +1,9 @@
 [tool.poetry]
 name = "demo-workflow-pypi"
 version = "0.0.0"
-url = "https://github.com/seanh/gha-python-packaging-demo"
-project_urls =
-    "Bug Tracker = https://github.com/seanh/gha-python-packaging-demo/issues"
-    "Changelog = https://github.com/seanh/gha-python-packaging-demo/releases"
-classifiers =
-    "Programming Language :: Python :: 3"
-    "License :: OSI Approved :: BSD License"
-    "Intended Audience :: Developers"
+description = "Library of code for working with shapes"
+authors = ["Lmooney25 <liammooney50@yahoo.co.uk>"]
+readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.8"
