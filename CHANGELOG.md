@@ -2,6 +2,11 @@
 
 <!--next-version-placeholder-->
 
+## v0.4.0 (2023-03-30)
+### Feature
+* "added sub functionality"  ([`c4cf005`](https://github.com/shilu10/demo-workflow-pypi/commit/c4cf0057048ad610d90d0db70477de5e3d405e97))
+* Ab13 ([`e0f2dfa`](https://github.com/shilu10/demo-workflow-pypi/commit/e0f2dfab5da3e63729ed902394cc5a07738928dc))
+
 ## v0.3.0 (2023-03-30)
 ### Feature
 * Ab12 ([`85dd579`](https://github.com/shilu10/demo-workflow-pypi/commit/85dd579698eb4862ae61c3e65f5e2e809d59bb49))
