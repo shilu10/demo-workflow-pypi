@@ -2,6 +2,9 @@
 
 <!--next-version-placeholder-->
 
+## v0.5.1 (2023-03-30)
+
+
 ## v0.5.0 (2023-03-30)
 ### Feature
 * Full completed ([`8aa6b75`](https://github.com/shilu10/demo-workflow-pypi/commit/8aa6b75a2bc6c0c7575a1a366dca01c841290c90))
