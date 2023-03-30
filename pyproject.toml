@@ -15,7 +15,10 @@ packages = [
     { include = "demo_workflow_pypi" },
     { include = "demo_workflow_pypi/*" },
 ]
-include = ["CHANGELOG.md"]
+
+[tool.poetry.urls]
+Changelog = "https://python-poetry.org/history/"
+
 
 
 [tool.poetry.dependencies]
