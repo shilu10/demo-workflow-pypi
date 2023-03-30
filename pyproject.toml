@@ -30,7 +30,7 @@ tensorflow = ">2"
 
 [tool.poetry.group.dev.dependencies]
 mypy = "^0.971"
-black = "^22.8.0"
+black = ">=22.8,<24.0"
 python-semantic-release = "^7.32.1"
 
 [build-system]
