@@ -1,7 +1,7 @@
 
 import pytest
 
-from demo_workflow_package import *
+from demo_workflow_pypi import *
 
 
 def test_add():
