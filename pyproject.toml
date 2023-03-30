@@ -3,8 +3,8 @@ name = "demo-workflow-pypi"
 version = "0.0.0"
 url = "https://github.com/seanh/gha-python-packaging-demo"
 project_urls =
-    Bug Tracker = "https://github.com/seanh/gha-python-packaging-demo/issues"
-    Changelog = "https://github.com/seanh/gha-python-packaging-demo/releases"
+    "Bug Tracker = https://github.com/seanh/gha-python-packaging-demo/issues"
+    "Changelog = https://github.com/seanh/gha-python-packaging-demo/releases"
 classifiers =
     "Programming Language :: Python :: 3"
     "License :: OSI Approved :: BSD License"
