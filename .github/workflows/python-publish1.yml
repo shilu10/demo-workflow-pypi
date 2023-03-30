@@ -5,6 +5,7 @@ on:
   push:
     branches:
       - master
+  pull_request:
 
 jobs:
   build:
@@ -27,3 +28,38 @@ jobs:
         run: poetry install
       - name: Test with Pytest
         run: poetry run pytest
+
+  release:
+    needs: build
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.8"]
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      ## full history of commits on repo will be checked out. Needed to for tool to determine how to set package version
+      - name: Install Poetry
+        run: pipx install poetry
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: "poetry"
+      - name: Install dependencies
+        run: poetry install
+      - name: Prepare package for release
+        env:
+          GH_TOKEN: ${{ secrets.TOKEN_GITHUB }}
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          poetry run semantic-release publish
+        ## Because inside the poetry venv?
+      - name: Publish to TestPyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          user: __token__
+          password: ${{ secrets.pypi_secret }}
