@@ -1,4 +1,4 @@
-import numpy as np
+
 import pytest
 
 from demo_workflow_package import *
