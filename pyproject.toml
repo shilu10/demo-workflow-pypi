@@ -4,6 +4,19 @@ version = "0.4.0"
 description = "Library of code for working with shapes"
 authors = ["Lmooney25 <liammooney50@yahoo.co.uk>"]
 readme = "README.md"
+repository = "https://github.com/python-poetry/poetry"
+documentation = "https://python-poetry.org/docs/"
+keywords = ["packaging", "poetry"]
+classifiers = [
+    "Topic :: Software Development :: Build Tools",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+packages = [
+    { include = "demo_workflow_pypi" },
+    { include = "demo_workflow_pypi/*" },
+]
+include = ["CHANGELOG.md"]
+
 
 [tool.poetry.dependencies]
 python = "^3.8"
