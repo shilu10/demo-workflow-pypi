@@ -25,6 +25,7 @@ Changelog = "https://python-poetry.org/history/"
 python = "^3.8"
 pytest = "^7.1.3"
 flake8 = "^5.0.4"
+numpy = ">1"
 
 [tool.poetry.group.dev.dependencies]
 mypy = "^0.971"
