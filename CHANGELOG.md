@@ -2,6 +2,9 @@
 
 <!--next-version-placeholder-->
 
+## v0.4.1 (2023-03-30)
+
+
 ## v0.4.0 (2023-03-30)
 ### Feature
 * "added sub functionality"  ([`c4cf005`](https://github.com/shilu10/demo-workflow-pypi/commit/c4cf0057048ad610d90d0db70477de5e3d405e97))
