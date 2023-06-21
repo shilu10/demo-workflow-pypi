@@ -29,7 +29,7 @@ numpy = ">1"
 tensorflow = ">2"
 
 [tool.poetry.group.dev.dependencies]
-mypy = "^0.971"
+mypy = ">=0.971,<1.5"
 black = "^22.8.0"
 python-semantic-release = "^7.32.1"
 
