@@ -30,7 +30,7 @@ numpy = ">1"
 [tool.poetry.group.dev.dependencies]
 mypy = "^0.971"
 black = "^22.8.0"
-python-semantic-release = "^7.32.1"
+python-semantic-release = ">=7.32.1,<10.0.0"
 
 [build-system]
 requires = ["poetry-core"]
